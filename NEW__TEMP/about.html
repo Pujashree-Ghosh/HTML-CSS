@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>about page</title>
+	<link rel="stylesheet" href="style.css">
+    <div w3-include-html="navbar.html"></div>
+	<div w3-include-html="footer.html"></div>
+</head>
+
+<style>
+	.main {
+		max-width: 1200px;
+		margin: auto;
+	}
+
+	.title1 {
+		position: absolute;
+		top: 5%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-family: 'times new roman';
+		color: white;
+
+	}
+
+	.title1 h1 {
+		font-size: 40px;
+		background: -webkit-linear-gradient(#fff, #745);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.para1 {
+
+		position: absolute;
+		text-align: justify;
+		top: 10%;
+		left: 5%;
+		right: 5%;
+		font-family: 'luminari';
+		font-size: 20px;
+		opacity: 100;
+		color: black;
+		align: center;
+	}
+
+	.title2 {
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-family: 'times new roman';
+		color: white;
+
+	}
+
+	.title2 h2 {
+		font-size: 40px;
+		background: -webkit-linear-gradient(#fff, #255);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.para2 {
+		position: absolute;
+		text-align: justify;
+		top: 50%;
+		left: 5%;
+		right: 5%;
+		font-family: 'luminari';
+		font-size: 20px;
+		opacity: 100;
+		color: black;
+	}
+
+	.address {
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-family: 'times new roman';
+		color: white;
+
+	}
+
+	.address h3 {
+		font-size: 30px;
+		background: -webkit-linear-gradient(#fff, #888);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.para3 {
+		position: absolute;
+		text-align: justify;
+		top: 83%;
+		left: 5%;
+		right: 5%;
+		font-family: 'luminari';
+		font-size: 20px;
+		opacity: 100;
+		color: White;
+	}
+</style>
+
+<body>
+	<!-- <header>
+
+		<div class="main">
+			<div class="title1">
+				<h1 align="center"><b> Bit Canny Technologies Pvt. Ltd.</b></h1>
+			</div>
+			<div class="para1">
+
+				<p align="center">
+					This system is developed to manage the day-to-day maintenance activities of a residential society.
+					People now a days, are very busy with their routine work, so they do not have time to make complain
+					to the technicians by going to their places for even very small problem related to their houses.
+					This co-operative society management system will computerize all day to day maintenance in the
+					society.
+					This System also keep the details of service providers who provide different services like
+					Electrician,Plumbing, Housekeeing,
+					Renovation service etc.
+				</p>
+			</div>
+
+			<div class="title2">
+				<h2 align="center"><b>Benefits of Users</b></h2>
+			</div>
+			<div class="para2">
+				<p align="center">
+					We have developed the system for the society members so that they can make complain form any where
+					any time and
+					try to resolve the complain by providing them the best technicians for their mentioned problems as
+					soon as possible.</p>
+			</div>
+			<div class="address">
+				<h3 align="center"><b>Address</b></h3>
+			</div>
+			<div class="para3">
+				<p align="center">
+					<b style="font-family: vivaldi ; color: yellow">Location :</b> Saltlake,Kolkata &nbsp;&nbsp;&nbsp
+					<b style="font-family: vivaldi; color: yellow">Mobile No :</b> 8240583028 &nbsp;&nbsp;&nbsp
+					<b style="font-family: vivaldi; color: yellow">Email Id :</b> rsms007@gmail.com
+				</p>
+			</div>
+		</div>
+
+
+	</header> -->
+
+</body>
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                        if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
+        }
+    }
+</script>
+<script>
+    includeHTML();
+</script>
+</html>

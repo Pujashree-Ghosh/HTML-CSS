@@ -1,0 +1,39 @@
+.container{
+    border: black;
+    background-color: burlywood;
+}
+#bcont{
+    background-color: cadetblue;
+    height: 4000px;
+}
+.box{
+    border: 2px solid rgb(3, 3, 3);
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+#box1{
+    top: 10px;
+    left: 10px;
+}
+#box2{
+    position: relative;
+    top: 33px;
+    left: 45px;
+}
+#box3{
+    position: fixed;
+    top:200px;
+    right: 10px;
+}
+#box4{
+    position: absolute;
+    top: 6px;
+    left: 150px;
+}
+#box5{
+    position: sticky;
+    top: 10px;
+    left: 10px;
+}

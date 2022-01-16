@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: black;
+  height: 39px;
+  text-align: center;
+}
+.navbar ul {
+  display: inline-flex;
+  list-style: none;
+  color: white;
+}
+.navbar ul li {
+  width: 100px;
+  margin: 15spx;
+  padding: 20px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.active,
+.navbar ul li:hover {
+  margin: 2px;
+  height: 15px;
+  background: grey;
+  border-radius: 3px;
+}
+.menu1 {
+  display: none;
+}
+.navbar ul li:hover .menu1 {
+  display: block;
+  position: absolute;
+  background: rgb(48, 47, 47);
+  margin-top: 8px;
+  margin-left: -15px;
+}
+.navbar ul li:hover .menu1 ul {
+  display: block;
+  margin: 10px;
+}
+.navbar ul li:hover .menu1 ul li {
+  width: 90px;
+  position: 10px;
+  border-bottom: 1px white;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+.container {
+  text-align: center;
+  width: 40%;
+  margin-top: 25px;
+  margin-right: 3px;
+  margin-left: 50px;
+  border: 2px solid black;
+  display: block;
+}
+.container b {
+  color: green;
+  margin-left: 10px;
+}
+.container i {
+  color: blue;
+  margin-left: 10px;
+}
+.container p {
+  color: rgb(252, 122, 0);
+  margin-left: 10px;
+}
+th {
+  color: blue;
+}
+td {
+  color: rgb(117, 33, 82);
+}
+.container2 {
+  width: 40%;
+  margin-top: 25px;
+  margin-right: 3px;
+  margin-left: 50px;
+  border: 2px solid black;
+  display: block;
+}
+.table {
+  margin-top: 20px;
+  margin-left: 170px;
+}
+.container3 {
+  text-align: center;
+  width: 40%;
+  margin-top: 25px;
+  margin-right: 3px;
+  margin-left: 50px;
+  border: 2px solid black;
+  display: block;
+}
+
+.container3 p {
+  color: rgb(121, 12, 194);
+  margin-left: 10px;
+}
+.container4 {
+  text-align: center;
+  width: 40%;
+  margin-top: 50px;
+  margin-right: 10px;
+  margin-left: 50px;
+  border: 2px solid black;
+  display: block;
+}
+.radio {
+  width: 40%;
+  margin-top: 25px;
+  margin-right: 3px;
+  margin-left: 50px;
+  border: 2px solid black;
+  display: block;
+}
+.radio p {
+  margin: 10px;
+  color: blue;
+}
+.radio input {
+  margin-left: 10px;
+  color: rgb(8, 24, 10);
+}
+.check {
+  width: 40%;
+  margin-top: 25px;
+  margin-right: 3px;
+  margin-left: 50px;
+  border: 2px solid black;
+  display: block;
+}
+.check input {
+  margin-left: 10px;
+  color: rgb(8, 24, 10);
+}
+.Lists {
+  width: 40%;
+  margin-top: 25px;
+  margin-right: 3px;
+  margin-left: 50px;
+  border: 2px solid black;
+  display: block;
+}
+.Lists p {
+  margin: 10px;
+  color: blue;
+}
+.Lists li {
+  margin-left: 50px;
+  color: rgb(8, 24, 10);
+}
+
+.btn {
+  margin-top: 8%;
+  margin-left: 78%;
+  width: 100px;
+  height: 25px;
+  background: linear-gradient(
+    rgba(254, 254, 255, 0.836),
+    rgba(164, 5, 226, 0.3)
+  );
+  border: none;
+  box-shadow: 1px 2px 3px rgba(252, 252, 252, 0.863);
+}
+.btn:hover {
+  background-color: #012d41;
+  box-shadow: 0px 15px 20px rgba(46, 177, 229, 0.452);
+  color: #fff;
+}
+p {
+  margin-left: 50px;
+}
+.flex {
+  height: 250px;
+  width: 70%;
+  border: 2px solid black;
+  display: flex;
+  margin-left: 50px;
+  flex-direction: row-reverse;
+}
+.item {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  border: 2px solid green;
+  margin: 10px;
+  padding: 3px;
+}
+#item-1 {
+  flex-grow: 3;
+}
+#item-2 {
+  flex-basis: 160px;
+}
+#item-3 {
+  flex-shrink: 4;
+}
+.container5 {
+  /* width: 100%;
+        margin-top: 50px;
+        margin-right: 10px;
+        margin-left: 0px; */
+  border: 2px solid black;
+  /* display: block; */
+  background-color: rgb(247, 231, 159);
+  /* height: 4000px; */
+}
+.box {
+  border: 2px solid rgb(0, 0, 0);
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+#box1 {
+  /* position: relative;        */
+  top: 10px;
+  left: 34px;
+}
+#box2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+#box3 {
+  position: relative;
+  /* top: 34px;
+        left: 34px;        */
+}
+
+#box4 {
+  position: fixed;
+  top: 34px;
+  right: 34px;
+}
+#box5 {
+  position: sticky;
+  top: 3px;
+}
+
+/*.carousel img{
+    width: 1600px;
+    height: 450px;
+}
+.carousel-caption h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+
+.item img{
+    height: 90px;
+    position: fixed;
+    top:650px;
+    right: 10px;
+}
+.row{
+    margin: 20px 10px 10px 500px;
+}
+.content{
+    margin: 5px;
+}
+.content h1{
+    font-weight: bold;
+    color: black;
+}
+h5{
+    margin: 5px;
+}*/

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="TestForm" onsubmit="alert(this.name);return false">
+      <input type="radio" name="TestRadio" onClick="alert(this.name)" />
+      check to alert this object name
+      <input type="text" name="TestText" />
+      <p>Put name and check the below radio option to alert your entry</p>
+      <input
+        type="radio"
+        name="TestSecondRadio"
+        onClick="alert(this.form.TestText.value)"
+      />
+      <p>Check this to alert text field entry</p>
+      <input type="submit" />
+      <p>
+        Notice onsubmit event handler while opening the form to see the action
+        taken when submit button is clicked
+      </p>
+    </form>
+  </body>
+</html>
